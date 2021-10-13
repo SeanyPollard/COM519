@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-require("dotenv/types").config();
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const app = express();
