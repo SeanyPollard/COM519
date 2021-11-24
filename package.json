@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon app.js",
     "seedProduction": "cross-env NODE_ENV=production node seeder.js",
-    "seed": "node seeder.js"
+    "seed": "node seeder.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +28,8 @@
     "md5": "^2.3.0",
     "mongodb": "^3.6.2",
     "mongoose": "^6.0.13"
+  },
+  "engines": {
+    "node": "15.x"
   }
 }
