@@ -24,7 +24,7 @@ app.set("view engine", "ejs");
  * notice above we are using dotenv. We can now pull the values from our environment
  */
 
-const { PORT, MONGODB_URI } = process.env;
+const { PORT, MONGODB_PROD_URI } = process.env;
 
 /**
  * connect to database
@@ -33,7 +33,7 @@ const { PORT, MONGODB_URI } = process.env;
 
 
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_PROD_URI, { useNewUrlParser: true });
 mongoose.connection.on("error", (err) => {
   console.error(err);
   console.log(
